@@ -1,12 +1,11 @@
-import React, { Component } from 'react'
-
-import ExampleComponent from 'lessful-react-datatable'
+import React, { Component } from 'react';
+import DataTable from 'lessful-react-datatable';
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <DataTable header={"asd"} />
       </div>
     )
   }
