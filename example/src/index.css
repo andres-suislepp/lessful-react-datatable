@@ -1,5 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root {
+  --color-primary: #F46036;
+  --color-primary-light: rgb(250, 117, 81);
+  --color-light: #E1E1E1;
+  --color-dark: #3A3A3A;
+  --color-active: #f6f9fc;
+
+  --shadow-default: 0 1px 5px 0 rgba(0,0,0,0.05);
+  --border-default: 1px solid rgba(0,0,0,0.1);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Karla', sans-serif;
+  font-size: 0.9em;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.table {
+  border-radius: 4px;
+  box-shadow: var(--shadow-default);
+  border: var(--border-default);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table tr {
+  border: none;
+}
+
+.table td {
+  border-top: 1px solid rgba(34,36,38,.1);
+}
+
+.table th {
+  font-weight: 400;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.table tr:hover {
+  background-color: var(--color-active);
+}
+
+.table td,
+.table th {
+  padding: 10px 20px;
+  min-height: 50px;
+}
+
+.logo-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.lfrdt-pagination-option {
+  padding: 8px;
+  color: #fff;
+  background: var(--color-primary-light);
+  display: inline-block;
+  min-width: 12px;
+  text-align: center;
+}
+
+.lfrdt-pagination-option:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.lfrdt-pagination-option:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lfrdt-pagination-option--active,
+.lfrdt-pagination-option:hover {
+  cursor: pointer;
+  background: var(--color-primary);
+  box-shadow: var(--shadow-default);
 }
