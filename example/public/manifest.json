@@ -1,0 +1,8 @@
+{
+  "short_name": "lessful-react-datatable",
+  "name": "lessful-react-datatable",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
